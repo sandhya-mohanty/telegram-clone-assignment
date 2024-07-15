@@ -1,0 +1,23 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-grid {
+  flex-grow: 1;
+}
+
+.select-chat-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.back-to-chat-list {
+  padding: 10px;
+  cursor: pointer;
+  color: var(--theme-color);
+  font-weight: bold;
+}

@@ -1,0 +1,66 @@
+/* MessageList styles */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.message-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  
+}
+
+.message-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+  color:var(--theme-color)
+}
+
+.message-item.beyondchat {
+  align-self: -start;
+  background-color: #e1f5fe;
+  
+}
+
+.message-item.user {
+  align-self:self-end;
+  background-color: #dcedc8;
+}
+
+.message-input-container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.message-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.message-input form {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .message-container{
+    height: 90vh; /* Full viewport height */
+  }
+}
+
+@media (max-width: 888px) {
+  .message-container{
+    height: 90vh; /* Full viewport height */
+
+  }
+}
+
